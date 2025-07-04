@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = git@github.com:msm8953F/device_xiaomi_daisy.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "14"]
+	remote = origin
+	merge = refs/heads/14
