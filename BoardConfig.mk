@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/sakura
+DEVICE_PATH := device/xiaomi/daisy
 
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
@@ -96,7 +96,7 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953
-TARGET_KERNEL_CONFIG := msm8953-perf_defconfig xiaomi/xiaomi.config xiaomi/sakura.config
+TARGET_KERNEL_CONFIG := msm8953-perf_defconfig xiaomi/xiaomi.config xiaomi/daisy.config
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
@@ -114,7 +114,7 @@ BOARD_SUPER_PARTITION_BLOCK_DEVICES := system vendor
 BOARD_SUPER_PARTITION_SYSTEM_DEVICE_SIZE := 3221225472
 BOARD_SUPER_PARTITION_VENDOR_DEVICE_SIZE := 872415232
 BOARD_SUPER_PARTITION_SIZE := 4093640704
-BOARD_SUPER_PARTITION_GROUPS := sakura_dynapart
+BOARD_SUPER_PARTITION_GROUPS := daisy_dynapart
 BOARD_SAKURA_DYNAPART_PARTITION_LIST := $(PARTITIONS)
 BOARD_SAKURA_DYNAPART_SIZE := 4089446400
 BOARD_SUPER_PARTITION_METADATA_DEVICE := system
@@ -187,5 +187,5 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
-include vendor/xiaomi/sakura/BoardConfigVendor.mk
+include vendor/xiaomi/daisy/BoardConfigVendor.mk
 include vendor/xiaomi/msm8953-common/BoardConfigVendor.mk
