@@ -28,8 +28,8 @@ clone_or_update() {
 }
 
 # Vendor Tree
-clone_or_update vendor/xiaomi/daisy https://github.com/msm8953F/vendor_xiaomi_daisy 14
-clone_or_update vendor/xiaomi/msm8953-common https://github.com/msm8953F/vendor_xiaomi_msm8953-common 14
+clone_or_update vendor/xiaomi/daisy https://github.com/msm8953F/vendor_xiaomi_daisy 14-new
+clone_or_update vendor/xiaomi/msm8953-common https://github.com/msm8953F/vendor_xiaomi_msm8953-common 14-new
 
 # Kernel Tree
 clone_or_update kernel/xiaomi/msm8953 https://github.com/msm8953F/kernel_xiaomi_msm8953 14
